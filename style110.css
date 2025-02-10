@@ -1,0 +1,44 @@
+#notificationsContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 150px;
+    width: 80%;
+}
+
+.notification {
+    background-color: #fff; /* خلفية بيضاء */
+    color: #000;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+    font-weight: 900; /* تغيير الوزن ليكون سميكًا جدًا */
+    font-size: 16px;
+    text-align: center;
+    border: 3px solid #F8C701; /* إطار أصفر */
+    transform: translateY(-20px);
+    animation: fadeInOut 6s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}

@@ -1,0 +1,110 @@
+/* خلفية متدرجة ممزوجة */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #0066cc, #003366); /* تدرج لوني */
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* تحسين شكل العنوان */
+.main-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 1px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* صورة التطبيق */
+.app-logo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.app-logo img {
+  width: 150px;
+  height: 150px;
+}
+
+
+/* الأزرار الرئيسية */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 0 30px;
+}
+
+/* الأزرار بتصميم دائري */
+.main-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+/* تأثير عند مرور الماوس */
+.main-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.main-btn img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* زر الإعدادات والتقارير في الأسفل */
+.footer-buttons {
+  margin-top: 130px;
+}
+
+.footer-btn {
+  display: inline-block;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: rgba(0, 86, 179, 0.9);
+}
+.footer-btn {
+  background: #0066cc;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width:390px; /* زيادة العرض */
+    background: rgba(255, 255, 255, 0.1); /* شفافية */
+    padding: 10px; /* زيادة المسافة الداخلية */
+    border-radius: 20px; /* تكبير الزوايا قليلاً */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* زيادة الظل */
+    text-align: center;
+    margin: 0 auto; /* لضمان التوسيط */
+    box-sizing: border-box; /* لضبط الحواف بشكل متساوي */
+    font-size: 18px; /* تكبير حجم الخط */
+} 

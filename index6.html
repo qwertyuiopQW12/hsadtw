@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سند قيد</title>
+    <link rel="stylesheet" href="style11.css">
+     <link rel="stylesheet" href="style110.css">
+</head>
+<body>
+    <div class="container">
+      
+        <img src="notification1.png" alt="الشعار" class="logo">
+      
+        <h2>سند قيد</h2>
+        <div class="form">
+          
+          
+            <label for="fromAccount">من حساب:</label>
+            <input type="text" id="fromAccount" placeholder="اسم الحساب المرسل">
+
+            <label for="toAccount">إلى حساب:</label>
+            <input type="text" id="toAccount" placeholder="اسم الحساب المستقبل">
+
+            <label for="amount">المبلغ:</label>
+            <input type="number" id="amount" placeholder="أدخل المبلغ">
+
+            <label for="currency">العملة:</label>
+            <select id="currency">
+                <option value="ريال يمني">ريال يمني</option>
+                <option value="دولار">دولار</option>
+                <option value="ريال سعودي">ريال سعودي</option>
+                <option value="يورو">يورو</option>
+            </select>
+
+            <label for="notes">ملاحظات:</label>
+            <textarea id="notes" placeholder="أدخل ملاحظات (اختياري)"></textarea>
+
+            <div class="buttons">
+                <button onclick="addEntry()">إضافة</button>
+                <button onclick="updateEntry()">تحديث</button>
+                <button onclick="deleteEntry()">حذف</button>
+                <button onclick="searchEntries()">بحث</button>
+                <button onclick="printReport()">طباعة</button>
+                <button onclick="exitPage()">خروج</button>
+            </div>
+        </div>
+
+        <div class="totals">
+            <h3>الإجماليات</h3>
+            <p>إجمالي المبالغ المحولة: <span id="totalAmount">0</span></p>
+        </div>
+
+        <div class="report">
+            <table>
+                <thead>
+                    <tr>
+                        <th>من حساب</th>
+                        <th>إلى حساب</th>
+                        <th>المبلغ</th>
+                        <th>العملة</th>
+                        <th>ملاحظات</th>
+                        <th>التاريخ</th>
+                    </tr>
+                </thead>
+                <tbody id="reportBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="notificationsContainer"></div>
+    
+   
+    <script src="script100.js"></script>
+    <script src="hgd.js"></script>
+    <script src="script6.js"></script>
+</body>
+</html>

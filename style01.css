@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #0066cc, #003366); /* تدرج لوني */
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.1); /* شفافية */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.notification-img {
+    width: 80px; /* حجم الصورة */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #ffcc00;
+    color: #003366;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #ff9900;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* تصميم الصورة الإشعار */
+.notification-img {
+    width: 160px; /* حجم أكبر للإشعار */
+    margin-bottom: 20px;
+}
+
+/* يمكنك تغيير العرض حسب الحاجة */
+
+
+
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* خلفية شفافة للنافذة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* فوق جميع العناصر */
+}
+
+.popup-content {
+    background: #ffffff; /* خلفية بيضاء */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    text-align: center; /* لتوسيط النصوص */
+}
+
+.hidden {
+    display: none; /* إخفاء النافذة عند عدم الحاجة */
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.popup-content p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.popup-content button:hover {
+    background: #004999; /* لون أغمق عند التمرير */
+} 
+
+
+/* إعداد شاشة البداية */
+#introScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #000; /* لون خلفية احتياطي */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+

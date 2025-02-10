@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التقارير</title>
+    <link rel="stylesheet" href="style12.css">
+     <link rel="stylesheet" href="style110.css">
+</head>
+<body>
+    <div class="container">
+      
+      <img src="notification1.png" alt="الشعار" class="logo">
+      
+        <h2>التقارير</h2>
+        <div class="filters">
+            <label for="accountName">اسم الحساب:</label>
+            <input type="text" id="accountName" placeholder="أدخل اسم الحساب">
+
+            <label for="reportType">نوع السند:</label>
+            <select id="reportType">
+                <option value="all">الكل</option>
+                <option value="صرف">سند صرف</option>
+                <option value="قبض">سند قبض</option>
+                <option value="قيد">سند قيد</option>
+            </select>
+
+            <label for="startDate">من تاريخ:</label>
+            <input type="date" id="startDate">
+
+            <label for="endDate">إلى تاريخ:</label>
+            <input type="date" id="endDate">
+
+            <button onclick="generateReport()">عرض التقرير</button>
+        </div>
+
+        <div class="totals">
+            <h3>الإجماليات</h3>
+            <p>إجمالي الريال اليمني: <span id="totalYER">0</span></p>
+            <p>إجمالي الريال السعودي: <span id="totalSAR">0</span></p>
+            <p>إجمالي الدولار الأمريكي: <span id="totalUSD">0</span></p>
+        </div>
+
+        <div class="report">
+            <table>
+                <thead id="reportHeader"></thead>
+                <tbody id="reportBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="notificationsContainer"></div>
+    
+    <script src="script110.js"></script>
+    <script src="script100.js"></script>
+    <script src="hgd.js"></script>
+    <script src="script7.js"></script>
+</body>
+</html>

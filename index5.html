@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سند صرف وقبض</title>
+    <link rel="stylesheet" href="style0.css">
+     <link rel="stylesheet" href="style110.css">
+</head>
+<body>
+    <div class="container">
+        <!-- إضافة صورة ثابتة -->
+        <div class="header">
+            <img src="notification1.png" alt="الشعار" class="logo">
+            <h2>سندات الصرف والقبض</h2>
+        </div>
+
+        <!-- الأزرار العلوية -->
+        <div class="type-switch">
+            <button onclick="switchToExpense()">سند صرف</button>
+            <button onclick="switchToReceipt()">سند قبض</button>
+        </div>
+
+        <!-- إدخال البيانات -->
+        <div class="form-section">
+            <input type="text" placeholder="اسم الحساب">
+            <input type="number" placeholder="المبلغ">
+            <select>
+                <option>العملة</option>
+                <option>ريال يمني</option>
+                <option>دولار أمريكي</option>
+                <option>ريال سعودي</option>
+            </select>
+            <input type="text" placeholder="ملاحظات">
+        </div>
+
+        <!-- أزرار العمليات -->
+        <div class="footer-buttons">
+            <button onclick="addTransaction()">إضافة</button>
+            <button onclick="updateTransaction()">تحديث</button>
+            <button onclick="deleteTransaction()">حذف</button>
+            <button onclick="printReport()">طباعة</button>
+            <button onclick="logout()">خروج</button>
+        </div>
+
+        <!-- جدول التقارير -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>اسم الحساب</th>
+                        <th>المبلغ</th>
+                        <th>العملة</th>
+                        <th>الملاحظات</th>
+                        <th>التاريخ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- البيانات ستظهر هنا -->
+                    <tr>
+                        <td>حساب تجريبي</td>
+                        <td>1000</td>
+                        <td>ريال سعودي</td>
+                        <td>ملاحظات هنا</td>
+                        <td>2025-02-02</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<div id="notificationsContainer"></div>
+    
+    
+    <script src="script100.js"></script>
+    <script src="hgd.js"></script>
+    <script src="script5.js"></script>
+</body>
+</html>

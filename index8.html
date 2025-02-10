@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="style0.css">
+     <link rel="stylesheet" href="style110.css">
+</head>
+<body>
+    <div class="container">
+        <!-- العنوان -->
+        <div class="header">
+            <img src="notification1.png" alt="الشعار" class="logo">
+            <h2>إدارة الحسابات</h2>
+        </div>
+
+        <!-- الحقول -->
+        <div class="form-section">
+            <input type="text" id="accountName" placeholder="الاسم">
+            <input type="text" id="accountNumber" placeholder="الرقم">
+            <input type="number" id="openingBalance" placeholder="المبلغ الافتتاحي">
+            <input type="text" id="businessName" placeholder="الاسم التجاري">
+        </div>
+
+        <!-- الأزرار -->
+        <div class="footer-buttons">
+            <button onclick="addAccount()">إضافة</button>
+            <button onclick="updateAccount()">تعديل</button>
+            <button onclick="deleteAccount()">حذف</button>
+        </div>
+
+        <!-- عرض الحسابات -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>الاسم</th>
+                        <th>الرقم</th>
+                        <th>المبلغ الافتتاحي</th>
+                        <th>الاسم التجاري</th>
+                    </tr>
+                </thead>
+                <tbody id="accountsTable">
+                    <!-- الحسابات ستظهر هنا -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="notificationsContainer"></div>
+    
+   
+    <script src="script100.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

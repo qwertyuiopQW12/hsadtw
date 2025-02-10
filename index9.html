@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>  <html lang="ar">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>الإعدادات</title>  
+    <link rel="stylesheet" href="style9.css"> 
+     <link rel="stylesheet" href="style110.css">
+</head>  
+<body>  
+    <div class="container">  
+        <h1>الإعدادات</h1>  
+        <button onclick="toggleMenu('settingsMenu')">الإعدادات</button>  
+        <div id="settingsMenu" class="menu hidden">  
+            <button onclick="toggleSubMenu('changeDataMenu')">تغيير البيانات</button>  
+            <div id="changeDataMenu" class="submenu hidden">  
+                <label>تغيير اسم المستخدم:</label>  
+                <input type="text" placeholder="اسم المستخدم الجديد"><br>  
+                <label>تغيير كلمة المرور:</label>  
+                <input type="password" placeholder="كلمة المرور الجديدة"><br>  
+                <label>تغيير رمز الوصول السريع:</label>  
+                <input type="text" placeholder="رمز الوصول الجديد"><br>  
+            </div>  
+            <button onclick="showAboutApp()">حول التطبيق</button>  
+            <button onclick="logout()">خروج</button>  <button onclick="toggleSubMenu('themeMenu')">تخصيص الثيم</button>
+
+<div id="themeMenu" class="submenu hidden">  
+        <button onclick="changeTheme('theme1')">الثيم 1</button>  
+        <button onclick="changeTheme('theme2')">الثيم 2</button>  
+        <button onclick="changeTheme('theme3')">الثيم 3</button>  
+        <button onclick="resetTheme()">إرجاع الثيم الأساسي</button>  
+</div>  </div>  
+</div>  
+
+
+<!-- نافذة حول التطبيق -->  
+<div id="aboutAppModal" class="modal hidden">  
+    <div class="modal-content">  
+        <h2>حول التطبيق</h2>  
+         <p>
+
+تطبيق "التقارير وسندات القيد" هو أداة متطورة لإدارة وتسجيل المعاملات المالية. يهدف التطبيق إلى تبسيط العمليات المالية
+من خلال توفير منصة سهلة الاستخدام لتسجيل السندات، استخراج التقارير، ومتابعة الحسابات.
+
+ </p>   <h2>أغراض التطبيق</h2>  
+ <ul>  
+   <li>إدارة السندات المالية المختلفة مثل القيد، الصرف، والقبض.</li>  
+   <li>عرض التقارير التفصيلية والإجمالية بطريقة منظمة.</li>  
+   <li>توفير أدوات لتحديث أو حذف السندات بسهولة.</li>  
+   <li>حساب الإجماليات المالية حسب العملات المتوفرة.</li>  
+ </ul>   <h2>الفئة المستهدفة</h2>  
+ <p>  
+   التطبيق مخصص لأصحاب الأعمال الصغيرة والمتوسطة، الشركات، والأفراد الذين يحتاجون لإدارة معاملاتهم المالية بشكل دقيق ومنظم.  
+ </p>   <h2>المزايا</h2>  
+ <ul>  
+   <li>واجهة سهلة الاستخدام تدعم اللغة العربية بالكامل.</li>  
+   <li>مرونة في إدخال البيانات المالية متعددة العملات.</li>  
+   <li>إمكانية استخراج وطباعة التقارير بسهولة.</li>  
+ </ul>   <h2>معلومات المطور</h2>  
+ <p>  
+   هذا التطبيق تم تطويره بواسطة <strong>مجدي المرقب</strong>.  
+ </p>  
+ <h3>طرق التواصل</h3>  
+ <ul>  
+   <li>الهاتف: <a href="tel:+96737311305">+967 373 113 05</a></li>  
+   <li>البريد الإلكتروني: <a href="mailto:developer@example.com">developer@example.com</a></li>  
+   <li>التواصل عبر تيليجرام: <a href="https://t.me/mgaby6" target="_blank">@mgaby6</a></li>  
+ </ul>   <h3>شكر خاص</h3>  
+ <p>  
+   شكراً لجميع من ساهم في تحسين هذا التطبيق وتقديم الاقتراحات لتطويره.  
+ </p>  
+            <button onclick="closeModal()">إغلاق</button>  </div>  
+</div>  
+<div id="notificationsContainer"></div>
+
+
+<script src="script100.js"></script>
+<script src="script9.js"></script>  
+  <script src="hgd.js"></script>
+
+</body>  
